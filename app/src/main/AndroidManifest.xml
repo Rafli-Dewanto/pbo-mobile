@@ -12,14 +12,23 @@
         android:theme="@style/Theme.PboAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".LoginFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RelativeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FormActivity"
+            android:exported="true" />
+        <activity
             android:name=".LatihanIntentActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
             android:name=".KalkulatorActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
