@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class FormActivity extends AppCompatActivity {
+public class LinearActivity extends AppCompatActivity {
     EditText inputNama, inputAlamat;
     TextView hasil;
     Button btnSubmit;
@@ -16,7 +16,7 @@ public class FormActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form);
+        setContentView(R.layout.activity_linear);
 
         inputNama = findViewById(R.id.inputNama);
         inputAlamat = findViewById(R.id.inputAlamat);

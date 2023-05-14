@@ -12,13 +12,16 @@
         android:theme="@style/Theme.PboAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginFormActivity"
             android:exported="true" />
         <activity
             android:name=".RelativeActivity"
             android:exported="true" />
         <activity
-            android:name=".FormActivity"
+            android:name=".LinearActivity"
             android:exported="true" />
         <activity
             android:name=".LatihanIntentActivity"
