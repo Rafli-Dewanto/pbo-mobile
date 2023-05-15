@@ -21,9 +21,6 @@
             android:name=".ListViewDataActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true" />
-        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
@@ -48,7 +45,7 @@
             android:name=".KalkulatorActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
