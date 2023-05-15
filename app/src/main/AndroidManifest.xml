@@ -12,6 +12,15 @@
         android:theme="@style/Theme.PboAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NegaraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListViewDataActivity"
+            android:exported="true" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true" />
         <activity
@@ -33,7 +42,7 @@
             android:name=".LatihanIntentActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".PindahActivity"
             android:exported="true" />
         <activity
             android:name=".KalkulatorActivity"
