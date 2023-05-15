@@ -29,11 +29,13 @@
             android:hint="username"
             android:layout_height="wrap_content"/>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
-            android:hint="password"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUsername"
+            android:hint="Password"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonLogin"

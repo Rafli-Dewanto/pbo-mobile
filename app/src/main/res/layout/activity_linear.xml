@@ -13,13 +13,13 @@
         android:id="@+id/inputNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama: "/>
+        android:hint="Nama"/>
 
     <EditText
         android:id="@+id/inputAlamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Alamat: "/>
+        android:hint="Alamat"/>
 
     <TextView
         android:id="@+id/hasil"

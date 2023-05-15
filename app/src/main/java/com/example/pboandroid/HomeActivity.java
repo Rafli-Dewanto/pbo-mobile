@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent login = new Intent(HomeActivity.this, PindahActivity.class);
+                Intent login = new Intent(HomeActivity.this, LoginFormActivity.class);
                 startActivity(login);
                 finish();
             }

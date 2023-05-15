@@ -18,12 +18,12 @@
         android:id="@+id/relativeButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Linear Layout" />
+        android:text="Relative Layout" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Linear Layout" />
+        android:text="Login Layout" />
 
 </LinearLayout>
