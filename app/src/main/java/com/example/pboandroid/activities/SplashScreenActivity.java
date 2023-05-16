@@ -1,16 +1,17 @@
 package com.example.pboandroid.activities;
 
-import static java.lang.Thread.sleep;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
-
 import com.example.pboandroid.R;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
 
     private final int WELCOME_SCREEN_DISPLAY = 3000; // 3 detik
@@ -37,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                         wait += 100;
                     }
                 } catch (Exception e) {
-                    System.out.println(e);
+                    System.out.println(e.getMessage());
                 } finally {
                     Intent intent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                     startActivity(intent);

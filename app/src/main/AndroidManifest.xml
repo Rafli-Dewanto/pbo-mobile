@@ -25,16 +25,16 @@
             android:exported="true" />
         <activity
             android:name=".activities.HomeActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.RegisterActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.LoginFormActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.RelativeActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.LinearActivity"
             android:parentActivityName=".activities.HomeActivity"
