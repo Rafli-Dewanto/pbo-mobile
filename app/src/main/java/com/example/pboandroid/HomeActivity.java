@@ -20,31 +20,22 @@ public class HomeActivity extends AppCompatActivity {
         linearButton = findViewById(R.id.linearButton);
         relativeButton = findViewById(R.id.relativeButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent login = new Intent(HomeActivity.this, LoginFormActivity.class);
-                startActivity(login);
-                finish();
-            }
+        loginButton.setOnClickListener(view -> {
+            Intent login = new Intent(HomeActivity.this, LoginFormActivity.class);
+            startActivity(login);
+            finish();
         });
 
-        linearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent linear = new Intent(HomeActivity.this, LinearActivity.class);
-                startActivity(linear);
-                finish();
-            }
+        linearButton.setOnClickListener(view -> {
+            Intent linear = new Intent(HomeActivity.this, LinearActivity.class);
+            startActivity(linear);
+            finish();
         });
 
-        relativeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent relative = new Intent(HomeActivity.this, RelativeActivity.class);
-                startActivity(relative);
-                finish();
-            }
+        relativeButton.setOnClickListener(view -> {
+            Intent relative = new Intent(HomeActivity.this, RelativeActivity.class);
+            startActivity(relative);
+            finish();
         });
     }
 }
