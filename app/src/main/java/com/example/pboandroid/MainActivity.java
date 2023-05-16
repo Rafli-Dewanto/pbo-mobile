@@ -1,9 +1,7 @@
 package com.example.pboandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,12 +19,8 @@ public class MainActivity extends AppCompatActivity {
         inputNama = findViewById(R.id.nama);
         proses = findViewById(R.id.submit);
         hasil = findViewById(R.id.hasil);
-
-        proses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                hasil.setText(inputNama.getText().toString());
-            }
+        proses.setOnClickListener(view -> {
+            hasil.setText(inputNama.getText().toString());
         });
     }
 }

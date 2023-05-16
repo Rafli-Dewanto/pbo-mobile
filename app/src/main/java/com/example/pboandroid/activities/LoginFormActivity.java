@@ -1,4 +1,4 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.pboandroid.R;
 
 public class LoginFormActivity extends AppCompatActivity {
 

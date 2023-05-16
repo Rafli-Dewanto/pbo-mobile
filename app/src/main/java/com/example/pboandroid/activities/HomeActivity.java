@@ -1,11 +1,12 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import com.example.pboandroid.R;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -23,19 +24,16 @@ public class HomeActivity extends AppCompatActivity {
         loginButton.setOnClickListener(view -> {
             Intent login = new Intent(HomeActivity.this, LoginFormActivity.class);
             startActivity(login);
-            finish();
         });
 
         linearButton.setOnClickListener(view -> {
             Intent linear = new Intent(HomeActivity.this, LinearActivity.class);
             startActivity(linear);
-            finish();
         });
 
         relativeButton.setOnClickListener(view -> {
             Intent relative = new Intent(HomeActivity.this, RelativeActivity.class);
             startActivity(relative);
-            finish();
         });
     }
 }

@@ -1,4 +1,4 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.pboandroid.R;
 
 public class LatihanIntentActivity extends AppCompatActivity {
 

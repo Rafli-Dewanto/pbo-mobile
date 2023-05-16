@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_margin="200px"
-    tools:context=".LatihanIntentActivity">
+    tools:context=".activities.LatihanIntentActivity">
 
     <TextView
         android:layout_width="wrap_content"

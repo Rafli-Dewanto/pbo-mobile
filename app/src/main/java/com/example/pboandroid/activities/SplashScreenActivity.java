@@ -1,4 +1,4 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import static java.lang.Thread.sleep;
 
@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
+
+import com.example.pboandroid.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

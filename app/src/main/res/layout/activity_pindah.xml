@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="50px"
     android:gravity="center_horizontal"
-    tools:context=".PindahActivity">
+    tools:context=".activities.PindahActivity">
 
     <Button
         android:layout_width="wrap_content"

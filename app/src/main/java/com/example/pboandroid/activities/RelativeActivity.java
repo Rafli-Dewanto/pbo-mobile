@@ -1,4 +1,4 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.pboandroid.R;
 
 public class RelativeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -29,13 +31,10 @@ public class RelativeActivity extends AppCompatActivity implements AdapterView.O
         hasilTextView = findViewById(R.id.hasil);
         Button button = findViewById(R.id.tombol);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String selectedProvinsi = spinner.getSelectedItem().toString();
-                hasilTextView.setText(selectedProvinsi);
-                Toast.makeText(RelativeActivity.this, "Selected item: " + selectedProvinsi, Toast.LENGTH_SHORT).show();
-            }
+        button.setOnClickListener(v -> {
+            String selectedProvinsi = spinner.getSelectedItem().toString();
+            hasilTextView.setText(selectedProvinsi);
+//            Toast.makeText(RelativeActivity.this, "Selected item: " + selectedProvinsi, Toast.LENGTH_SHORT).show();
         });
     }
 

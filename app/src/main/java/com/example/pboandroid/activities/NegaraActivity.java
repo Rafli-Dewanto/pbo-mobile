@@ -1,9 +1,10 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.pboandroid.R;
 import com.example.pboandroid.adapters.NegaraAdapter;
 
 public class NegaraActivity extends AppCompatActivity {

@@ -7,7 +7,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    tools:context=".LinearActivity">
+    tools:context=".activities.LinearActivity">
 
     <EditText
         android:id="@+id/inputNama"

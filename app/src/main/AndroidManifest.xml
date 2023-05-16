@@ -12,40 +12,44 @@
         android:theme="@style/Theme.PboAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".ListViewActivity"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".NegaraActivity"
+            android:name=".activities.ListViewActivity"
             android:exported="true" />
         <activity
-            android:name=".ListViewDataActivity"
+            android:name=".activities.NegaraActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.ListViewDataActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activities.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginFormActivity"
+            android:name=".activities.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".RelativeActivity"
+            android:name=".activities.LoginFormActivity"
             android:exported="true" />
         <activity
-            android:name=".LinearActivity"
+            android:name=".activities.RelativeActivity"
             android:exported="true" />
         <activity
-            android:name=".LatihanIntentActivity"
+            android:name=".activities.LinearActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LatihanIntentActivity"
             android:exported="true" />
         <activity
-            android:name=".PindahActivity"
+            android:name=".activities.PindahActivity"
             android:exported="true" />
         <activity
-            android:name=".KalkulatorActivity"
+            android:name=".activities.KalkulatorActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

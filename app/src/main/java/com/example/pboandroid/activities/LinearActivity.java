@@ -1,4 +1,4 @@
-package com.example.pboandroid;
+package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.pboandroid.R;
 
 public class LinearActivity extends AppCompatActivity {
     EditText inputNama, inputAlamat;
@@ -23,11 +25,8 @@ public class LinearActivity extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
         btnSubmit = findViewById(R.id.btnSubmit);
 
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                hasil.setText("Hello nama saya " + inputNama.getText().toString() + " dan alamat saya di " + inputAlamat.getText().toString());
-            }
+        btnSubmit.setOnClickListener(view -> {
+            hasil.setText(String.format("Hello nama saya %s dan alamat saya di %s", inputNama.getText().toString(), inputAlamat.getText().toString()));
         });
 
     }
