@@ -2,6 +2,7 @@ package com.example.pboandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.pboandroid.R;
+import com.example.pboandroid.components.DynamicAppBar;
+import com.example.pboandroid.utils.AppBar;
 
 public class LinearActivity extends AppCompatActivity {
     EditText inputNama, inputAlamat;
@@ -19,7 +22,7 @@ public class LinearActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear);
-
+        AppBar.setupActionBar(this, "Linear Activity", HomeActivity.class);
         inputNama = findViewById(R.id.inputNama);
         inputAlamat = findViewById(R.id.inputAlamat);
         hasil = findViewById(R.id.hasil);
@@ -27,7 +30,7 @@ public class LinearActivity extends AppCompatActivity {
 
         btnSubmit.setOnClickListener(view -> {
             hasil.setText(String.format("Hello nama saya %s dan alamat saya di %s", inputNama.getText().toString(), inputAlamat.getText().toString()));
+            hasil.setVisibility(View.VISIBLE);
         });
-
     }
 }

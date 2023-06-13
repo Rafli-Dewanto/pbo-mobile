@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">pbo android</string>
+    <string name="login_layout">Login Layout</string>
+    <string name="negara">Negara</string>
+    <string name="programming_language">Programming Language</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="linear_layout">Linear Layout</string>
 </resources>

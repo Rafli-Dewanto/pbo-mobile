@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/darkMode"
     android:orientation="vertical"
-
     tools:context=".activities.HomeActivity">
 
     <Button
+        android:textColor="@color/turquoise_300"
+        style="@style/buttonSecondary"
         android:id="@+id/linearButton"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
+        android:layout_marginBottom="12dp"
         android:layout_height="wrap_content"
-        android:text="Linear Layout" />
+        android:text="@string/linear_layout" />
 
     <Button
+        android:textColor="@color/turquoise_300"
+        style="@style/buttonSecondary"
         android:id="@+id/relativeButton"
-        android:layout_width="200dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
-        android:text="Relative Layout" />
+        android:text="@string/relative_layout" />
 
     <Button
+        android:textColor="@color/turquoise_300"
+        style="@style/buttonSecondary"
         android:id="@+id/loginButton"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
+        android:layout_marginBottom="12dp"
         android:layout_height="wrap_content"
-        android:text="Login Layout" />
+        android:text="@string/login_layout" />
 
     <Button
+        android:textColor="@color/turquoise_300"
+        style="@style/buttonSecondary"
         android:id="@+id/btn_negara"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
+        android:layout_marginBottom="12dp"
         android:layout_height="wrap_content"
-        android:text="Negara" />
+        android:text="@string/negara" />
 
     <Button
+        android:textColor="@color/turquoise_300"
+        style="@style/buttonSecondary"
         android:id="@+id/btn_programmingLang"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
+        android:layout_marginBottom="12dp"
         android:layout_height="wrap_content"
-        android:text="Programming Language" />
+        android:text="@string/programming_language" />
 
 </LinearLayout>

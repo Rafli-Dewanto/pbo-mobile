@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pboandroid.R;
+import com.example.pboandroid.utils.AppBar;
 
 public class RelativeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -21,9 +22,10 @@ public class RelativeActivity extends AppCompatActivity implements AdapterView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relative);
+        AppBar.setupActionBar(this, "Relative Activity", HomeActivity.class);
 
         Spinner spinner = findViewById(R.id.provinsi);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.sampleProvinsi, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.sampleProvinsi, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinner.setAdapter(adapter);
@@ -34,7 +36,6 @@ public class RelativeActivity extends AppCompatActivity implements AdapterView.O
         button.setOnClickListener(v -> {
             String selectedProvinsi = spinner.getSelectedItem().toString();
             hasilTextView.setText(selectedProvinsi);
-//            Toast.makeText(RelativeActivity.this, "Selected item: " + selectedProvinsi, Toast.LENGTH_SHORT).show();
         });
     }
 

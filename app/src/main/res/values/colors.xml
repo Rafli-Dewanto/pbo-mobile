@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">@color/turquoise_400</color>
+    <color name="purple_500">@color/turquoise_500</color>
+    <color name="purple_700">#0d884c</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="hover_text_color">#FF0000</color>
+    
+    <color name="turquoise_50">#ebfef7</color>
+    <color name="turquoise_100">#cefde9</color>
+    <color name="turquoise_200">#a1f9d8</color>
+    <color name="turquoise_300">#65f0c6</color>
+    <color name="turquoise_400">#32e1b1</color>
+    <color name="turquoise_500">#03c697</color>
+    <color name="turquoise_600">#00a17c</color>
+    <color name="turquoise_700">#008167</color>
+    <color name="turquoise_800">#006652</color>
+    <color name="turquoise_900">#005446</color>
+    <color name="turquoise_950">#002f28</color>
+    <color name="darkMode">#18171C</color>
+    <color name="darkModeHint">#717171</color>
 </resources>

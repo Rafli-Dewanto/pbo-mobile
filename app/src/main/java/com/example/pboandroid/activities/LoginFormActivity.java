@@ -12,10 +12,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pboandroid.R;
+import com.example.pboandroid.components.DynamicAppBar;
 
 public class LoginFormActivity extends AppCompatActivity {
 
     EditText username, password;
+    DynamicAppBar appBar;
     Button buttonLogin;
     TextView signUp;
     @Override
@@ -39,6 +41,14 @@ public class LoginFormActivity extends AppCompatActivity {
         signUp.setOnClickListener(view -> {
             Intent register = new Intent(LoginFormActivity.this, RegisterActivity.class);
             startActivity(register);
+        });
+
+        appBar = findViewById(R.id.appbar);
+        appBar.setTitle("Login");
+        appBar.setBackButtonClickListener(v -> {
+            Intent i = new Intent(LoginFormActivity.this, HomeActivity.class);
+            startActivity(i);
+            finish();
         });
 
     }

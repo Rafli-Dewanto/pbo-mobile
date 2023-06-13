@@ -18,25 +18,30 @@
             android:name=".activities.ListViewActivity"
             android:exported="true" />
         <activity
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name=".activities.NegaraActivity"
             android:exported="true" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.ListViewDataActivity"
             android:exported="true" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.HomeActivity"
-            android:theme="@style/Theme.PboAndroid.NoAction"
             android:exported="false" />
         <activity
             android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.LoginFormActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.RelativeActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.LinearActivity"
             android:parentActivityName=".activities.HomeActivity"
             android:exported="false" />

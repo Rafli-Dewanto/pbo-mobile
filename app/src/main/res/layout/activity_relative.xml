@@ -4,39 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:background="@color/darkMode"
     tools:context=".activities.RelativeActivity">
-    
+
+    <com.example.pboandroid.components.DynamicAppBar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextView
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/appbar"
         android:id="@+id/provinsiText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Pilih Provinsi"/>
+        android:hint="Pilih Provinsi"
+        android:textColorHint="@color/turquoise_600" />
 
     <Spinner
+        android:layout_marginHorizontal="16dp"
+        android:padding="14dp"
         android:id="@+id/provinsi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/provinsiText"
-        android:entries="@array/sampleProvinsi"
         android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/tombol"/>
-    
+        android:layout_toLeftOf="@+id/tombol"
+        android:entries="@array/sampleProvinsi" />
+
     <Button
+        android:layout_marginEnd="16dp"
         android:id="@+id/tombol"
+        android:textColor="@color/black"
+        style="@style/buttonPrimary"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/provinsiText"
         android:layout_alignParentRight="true"
-        android:text="OK"/>
+        android:text="OK" />
 
     <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:id="@+id/hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hasil"
-        android:layout_below="@+id/provinsi"/>
+        android:layout_below="@+id/provinsi"
+        android:textColor="@color/turquoise_400" />
 
 </RelativeLayout>

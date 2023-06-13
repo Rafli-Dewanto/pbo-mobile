@@ -27,4 +27,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="buttonSecondary">
+        <item name="android:background">@drawable/btn_secondary</item>
+    </style>
+
+    <style name="buttonPrimary">
+        <item name="android:background">@drawable/btn_primary</item>
+    </style>
 </resources>
