@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
-
-import com.example.pboandroid.R;
 import com.example.pboandroid.adapters.NegaraAdapter;
+import com.example.pboandroid.R;
+
 
 public class NegaraActivity extends AppCompatActivity {
 
@@ -26,21 +26,10 @@ public class NegaraActivity extends AppCompatActivity {
                 {"Italia", "EROPA", "italia"},
                 {"Inggris", "EROPA", "inggris"},
                 {"Italia", "ASIA", "italia"},
-                {"Inggris", "EROPA", "inggris"},
                 {"Belanda", "EROPA", "belanda"},
                 {"Argentia", "AMERIKA", "argentina"},
                 {"Chile", "AMERIKA", "chile"},
                 {"Mesir", "AFRIKA", "mesir"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
-                {"Uganda", "AFRIKA", "uganda"},
                 {"Uganda", "AFRIKA", "uganda"},
         };
 
